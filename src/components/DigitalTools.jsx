@@ -1,7 +1,7 @@
 import React, { use } from "react";
 import DigitalToolsCard from "./DigitalToolsCard";
 
-const DigitalTools = ({ productsPromise,}) => {
+const DigitalTools = ({ productsPromise, cartContainer, setCartContainer}) => {
   const products = use(productsPromise);
 
   return (
@@ -15,7 +15,7 @@ const DigitalTools = ({ productsPromise,}) => {
         <div className=" max-w-[70%] mx-auto grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 container">
           {products.map((product) => (
             <div className="card" key={product.id}>
-              <DigitalToolsCard product={product}></DigitalToolsCard>
+              <DigitalToolsCard product={product} cartContainer = {cartContainer} setCartContainer = {setCartContainer}></DigitalToolsCard>
             </div>
           ))}
         </div>

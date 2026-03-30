@@ -1,6 +1,6 @@
 import React from "react";
 
-const ActiveBtn = ({ isActive, setIsActive }) => {
+const ActiveBtn = ({ isActive, setIsActive, cartContainer }) => {
   return (
     <div>
       <div className="text-center">
@@ -21,7 +21,7 @@ const ActiveBtn = ({ isActive, setIsActive }) => {
           onClick={() => setIsActive("carts")}
           className={`btn w-30 rounded-full rounded-l-none ${isActive === "carts" ? "bg-[#9514FA] text-white" : ""}`}
         >
-          Carts
+          Carts ({cartContainer.length})
         </button>
       </div>
     </div>

@@ -21,18 +21,22 @@ const productsPromise = dataFetch();
 
 function App() {
   const [isActive, setIsActive] = useState("products");
-  console.log(isActive);
+  // console.log(isActive);
   const [isCartSection, setIsCartSection] = useState("carts");
-  
+
+  const [cartContainer, setCartContainer] = useState([]);
+  console.log(cartContainer.length);
 
   return (
     <>
       <Nav></Nav>
       <Banner></Banner>
       <Stat></Stat>
-      <ActiveBtn setIsActive={setIsActive} isActive={isActive}></ActiveBtn>
-      {isActive === "products" && <DigitalTools productsPromise={productsPromise} ></DigitalTools>}
-      {isActive === "carts" && <Cart setIsCartSection= {setIsCartSection} isCartSection = {isCartSection}  ></Cart>}
+      <ActiveBtn setIsActive={setIsActive} isActive={isActive} cartContainer = {cartContainer}></ActiveBtn>
+
+      {isActive === "products" && <DigitalTools productsPromise={productsPromise} cartContainer = {cartContainer} setCartContainer = {setCartContainer}></DigitalTools>}
+
+      {isActive === "carts" && <Cart cartContainer = {cartContainer} setCartContainer = {setCartContainer}></Cart>}
     </>
   );
 }
