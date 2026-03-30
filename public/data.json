@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Canva Pro",
+    "description": "Graphic design tool for creating social media posts, presentations, and branding materials.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "feature": ["1000+ templates", "Brand kit", "Background remover", "Export to PNG/PDF"],
+    "icon": "https://i.ibb.co.com/0Vdzqn7T/images.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Notion",
+    "description": "All-in-one workspace for notes, tasks, databases, and collaboration.",
+    "price": 8,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "feature": ["Custom templates", "Team collaboration", "Database support", "Markdown support"],
+    "icon": "https://i.ibb.co.com/3y8DgVDD/download.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Grammarly Premium",
+    "description": "AI writing assistant for grammar, clarity, and tone improvement.",
+    "price": 30,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "feature": ["Grammar check", "Tone detection", "Plagiarism checker", "AI suggestions"],
+    "icon": "https://i.ibb.co.com/ZRymhKS0/images.png"
+  },
+  {
+    "id": 4,
+    "name": "Figma",
+    "description": "Cloud-based UI/UX design and prototyping tool.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "feature": ["Real-time collaboration", "Prototyping", "Design systems", "Plugins"],
+    "icon": "https://i.ibb.co.com/XTZYjg2/images.png"
+  },
+  {
+    "id": 5,
+    "name": "Adobe Photoshop",
+    "description": "Professional image editing and graphic design software.",
+    "price": 20.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "feature": ["Layer editing", "AI tools", "RAW support", "Advanced filters"],
+    "icon": "https://i.ibb.co.com/0jrLLsQw/adobe-photoshop-logo-icon-free-vector.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Ahrefs",
+    "description": "SEO toolset for keyword research, backlinks, and site audits.",
+    "price": 99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "feature": ["Keyword explorer", "Site audit", "Backlink checker", "Rank tracking"],
+    "icon": "ahrefs-icon.png"
+  },
+  {
+    "id": 7,
+    "name": "ChatGPT Plus",
+    "description": "Advanced AI assistant for writing, coding, and productivity.",
+    "price": 20,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "feature": ["AI chat", "Code generation", "Content writing", "Fast responses"],
+    "icon": "chatgpt-icon.png"
+  },
+  {
+    "id": 8,
+    "name": "Trello",
+    "description": "Project management tool using boards, lists, and cards.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "feature": ["Kanban boards", "Team collaboration", "Automation", "Integrations"],
+    "icon": "trello-icon.png"
+  },
+  {
+    "id": 9,
+    "name": "Zoom Pro",
+    "description": "Video conferencing and online meeting platform.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "feature": ["HD video calls", "Screen sharing", "Recording", "Breakout rooms"],
+    "icon": "zoom-icon.png"
+  },
+  {
+    "id": 10,
+    "name": "Envato Elements",
+    "description": "Subscription service for digital assets like templates, graphics, and videos.",
+    "price": 16.5,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "feature": ["Unlimited downloads", "Stock videos", "Graphic templates", "Music assets"],
+    "icon": "envato-icon.png"
+  }
+]
