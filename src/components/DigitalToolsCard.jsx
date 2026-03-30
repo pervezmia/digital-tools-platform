@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 
 const DigitalToolsCard = ({product}) => {
     const [isBuy, setIsBuy] = useState(false)
+
+    const handleBuy = () => {
+        setIsBuy(true)
+    }
     
     return (
         <div className="p-6 rounded-xl border border-gray-400 space-y-4">
@@ -25,7 +29,7 @@ const DigitalToolsCard = ({product}) => {
               <div>
                 <p>{product.period}</p>
               </div>
-              <button onClick={() => setIsBuy(true)} className="btn w-full rounded-full bg-[#9514FA] text-white font-semibold">
+              <button onClick={handleBuy } className="btn w-full rounded-full bg-[#9514FA] text-white font-semibold">
                 {isBuy? "Added to Cart" : "Buy Now" }
               </button>
             </div>

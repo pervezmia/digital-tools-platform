@@ -5,6 +5,9 @@ import DigitalTools from "./components/DigitalTools";
 import Nav from "./components/Nav";
 import Stat from "./components/Stat";
 import Cart from "./components/Cart";
+import DigitalToolsCard from "./components/DigitalToolsCard";
+import ActiveBtn from "./components/ActiveBtn";
+
 
 const dataFetch = async () => {
   const res = await fetch("/data.json");
@@ -19,6 +22,7 @@ const productsPromise = dataFetch();
 function App() {
   const [isActive, setIsActive] = useState("products");
   console.log(isActive);
+  const [isCartSection, setIsCartSection] = useState("carts");
   
 
   return (
@@ -26,8 +30,9 @@ function App() {
       <Nav></Nav>
       <Banner></Banner>
       <Stat></Stat>
-      <DigitalTools productsPromise={productsPromise} setIsActive={setIsActive} isActive={isActive}></DigitalTools>
-      <Cart></Cart>
+      <ActiveBtn setIsActive={setIsActive} isActive={isActive}></ActiveBtn>
+      {isActive === "products" && <DigitalTools productsPromise={productsPromise} ></DigitalTools>}
+      {isActive === "carts" && <Cart setIsCartSection= {setIsCartSection} isCartSection = {isCartSection}  ></Cart>}
     </>
   );
 }
