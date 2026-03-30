@@ -1,7 +1,7 @@
 import React from "react";
 import { FaCartShopping } from "react-icons/fa6";
 
-const Nav = () => {
+const Nav = ({cartContainer}) => {
   return (
     <div className="navbar bg-base-100 shadow-sm md:max-w-[80%] mx-auto">
       <div className="navbar-start">
@@ -66,8 +66,11 @@ const Nav = () => {
         </ul>
       </div>
       <div className="navbar-end gap-5">
-        <FaCartShopping />
-        {/* <a className="btn">Button</a> */}
+        <div className="relative">
+          <FaCartShopping />
+          <p className="absolute text-red-500 font-bold -top-4 left-2">{cartContainer.length}</p>
+        </div>
+        
 
         <div className="tabs tabs-box">
           <input
