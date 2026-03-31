@@ -16,11 +16,12 @@ const Cart = ({ cartContainer, setCartContainer }) => {
         (deleteItem) => deleteItem.id !== data.id
       );
       setCartContainer(filterArray);
-      toast.warning("delete successfully !")
+      toast.warning("remove successfully !")
     }
   };
   return (
-    <div className="mb-2 border-2 border-gray-300 max-w-[70%] mx-auto rounded-2xl p-5 space-y-4.5">
+    <div className="p-5">
+    <div className="mb-2 border-2 border-gray-300 md:max-w-[70%] mx-auto rounded-2xl p-5 space-y-4.5">
       {cartContainer.length === 0 ? (
         <div>
           <div className="flex items-center justify-center p-12 bg-gray-300 rounded-2xl">
@@ -63,6 +64,7 @@ const Cart = ({ cartContainer, setCartContainer }) => {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 };

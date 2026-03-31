@@ -40,10 +40,9 @@ const Steps = () => {
               <img src={packaged} alt="" />
             </div>
             <div className="text-center space-y-3">
-              <h3 className="font-semibold text-xl">Create Account</h3>
+              <h3 className="font-semibold text-xl">Choose Products</h3>
               <p className="text-xs ">
-                Sign up for free in seconds. No credit card required to get
-                started.
+                Browse our catalog and select the tools that fit your needs.
               </p>
             </div>
           </div>
@@ -57,10 +56,9 @@ const Steps = () => {
               <img src={rocket} alt="" />
             </div>
             <div className="text-center space-y-3">
-              <h3 className="font-semibold text-xl">Create Account</h3>
+              <h3 className="font-semibold text-xl">Start Creating</h3>
               <p className="text-xs ">
-                Sign up for free in seconds. No credit card required to get
-                started.
+                Download and start using your premium tools immediately.
               </p>
             </div>
           </div>

@@ -9,6 +9,7 @@ import DigitalToolsCard from "./components/DigitalToolsCard";
 import ActiveBtn from "./components/ActiveBtn";
 import SubscriptionCard from "./components/SubscriptionCard";
 import Steps from "./components/Steps";
+import Footer from "./components/Footer";
 
 
 const dataFetch = async () => {
@@ -47,6 +48,7 @@ function App() {
       {isActive === "carts" && <Cart cartContainer = {cartContainer} setCartContainer = {setCartContainer}></Cart>}
       <Steps></Steps>
       <SubscriptionCard pricePromise={pricePromise}></SubscriptionCard>
+      <Footer></Footer>
     </>
   );
 }
