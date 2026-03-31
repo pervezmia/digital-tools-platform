@@ -1,4 +1,4 @@
-# 🛒 React Product Cart App
+# 🛒 React digital-tools-platform
 
 A modern and responsive **Product Cart Application** built using **React, Tailwind CSS, DaisyUI, and ES6**. This project focuses on clean UI, smooth user experience, and interactive functionality like adding/removing products and checkout flow.
 

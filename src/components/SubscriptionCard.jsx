@@ -6,12 +6,12 @@ const SubscriptionCard = ({ pricePromise }) => {
 
   return (
     <div className="py-30">
-      <div className="max-w-[60%] mx-auto text-center mb-20 space-y-5">
+      <div className="lg:max-w-[60%] mx-auto text-center mb-20 space-y-5">
         <h2 className="text-4xl font-bold">Simple, Transparent Pricing</h2>
         <p className="text-xs">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
       </div>
 
-      <div className="max-w-[50%] mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="lg:max-w-[50%] p-10 mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {priceInfos.map((info) => (
           <div key={info.id} className={`card   ${info.favorite? "bg-linear-to-bl from-violet-500 to-fuchsia-500": "bg-[#F2F2F2] text-black"} `}>
             <div className="card-body space-y-3.5 relative">
