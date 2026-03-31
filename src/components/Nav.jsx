@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
 
 const Nav = ({ cartContainer }) => {
+  const [isLogin, setIsLogin] = useState("start");
+
+  const loginHandle = () => {
+        setIsLogin("login")
+  }
+  const startHandle = () => {
+    setIsLogin("start")
+  }
   return (
     <div className=" bg-base-100 shadow-sm ">
       <div className="md:max-w-[80%] mx-auto navbar">
@@ -76,16 +84,18 @@ const Nav = ({ cartContainer }) => {
 
           <div className="tabs tabs-box">
             <input
+              onClick={loginHandle}
               type="radio"
               name="my_tabs_1"
-              className="tab"
+              className={`tab rounded-full ${isLogin === "login" ? "bg-violet-600 text-white" : ""}`}
               aria-label="Login"
             />
             <input
+              onClick={startHandle}
               type="radio"
               name="my_tabs_1"
-              className="tab"
-              aria-label="Button"
+              className={`tab rounded-full ${isLogin === "start" ? "bg-violet-600 text-white" : ""}`}
+              aria-label="Get Started"
               defaultChecked
             />
           </div>

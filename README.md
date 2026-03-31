@@ -25,7 +25,7 @@ A modern and responsive **Product Cart Application** built using **React, Tailwi
 
 ### ➕ 2. Add to Cart Functionality
 
-* Click **"Add to Cart"** button to add products
+* Click **"Buy now"** button to add products
 * Instant feedback using **modern toast alerts**
 * Cart updates dynamically
 
@@ -36,6 +36,7 @@ A modern and responsive **Product Cart Application** built using **React, Tailwi
 * Each cart item has a **Remove button**
 * Clicking it removes the specific item instantly
 * Smooth and user-friendly interaction
+* Instant feedback using **modern toast alerts**
 
 ---
 
@@ -46,6 +47,7 @@ A modern and responsive **Product Cart Application** built using **React, Tailwi
   * Clears all cart items
   * Shows alert: **"Cart is empty"**
 * Simulates real-world checkout behavior
+* Instant feedback using **modern toast alerts**
 
 ---
 
@@ -68,7 +70,7 @@ A modern and responsive **Product Cart Application** built using **React, Tailwi
 
 1. Load products from JSON
 2. Display them as cards
-3. Click **Add to Cart**
+3. Click **Buy now**
 4. Items appear in cart section
 5. Remove items individually if needed
 6. Click **Checkout → Cart resets**

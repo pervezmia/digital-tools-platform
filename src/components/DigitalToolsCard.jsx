@@ -44,9 +44,9 @@ const DigitalToolsCard = ({ product, cartContainer, setCartContainer }) => {
       <div className="flex items-center">
         <p className="font-bold text-2xl ">${product.price}</p>/{product.period}
       </div>
-      <div>
+      {/* <div>
         <p>{product.period}</p>
-      </div>
+      </div> */}
       <div>
         {product.feature.map((item, index) => (
           <div key={index} className="flex items-center gap-2">
