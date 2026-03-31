@@ -41,7 +41,7 @@
     "tag": "new",
     "tagType": "new",
     "feature": ["Real-time collaboration", "Prototyping", "Design systems", "Plugins"],
-    "icon": "https://i.ibb.co.com/XTZYjg2/images.png"
+    "icon": "https://i.ibb.co.com/LX4tPXYC/images.png"
   },
   {
     "id": 5,
@@ -63,7 +63,7 @@
     "tag": "popular",
     "tagType": "popular",
     "feature": ["Keyword explorer", "Site audit", "Backlink checker", "Rank tracking"],
-    "icon": "ahrefs-icon.png"
+    "icon": "https://i.ibb.co.com/v4mm7xKt/download.png"
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "tag": "popular",
     "tagType": "popular",
     "feature": ["AI chat", "Code generation", "Content writing", "Fast responses"],
-    "icon": "chatgpt-icon.png"
+    "icon": "https://i.ibb.co.com/27M4zLPz/chatgpt.jpg"
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@
     "tag": "new",
     "tagType": "new",
     "feature": ["Kanban boards", "Team collaboration", "Automation", "Integrations"],
-    "icon": "trello-icon.png"
+    "icon": "https://i.ibb.co.com/7tYPZFWn/download.jpg"
   },
   {
     "id": 9,
@@ -96,7 +96,7 @@
     "tag": "best seller",
     "tagType": "best seller",
     "feature": ["HD video calls", "Screen sharing", "Recording", "Breakout rooms"],
-    "icon": "zoom-icon.png"
+    "icon": "https://i.ibb.co.com/Txd818YP/download.png"
   },
   {
     "id": 10,
@@ -107,6 +107,6 @@
     "tag": "popular",
     "tagType": "popular",
     "feature": ["Unlimited downloads", "Stock videos", "Graphic templates", "Music assets"],
-    "icon": "envato-icon.png"
+    "icon": "https://i.ibb.co.com/1tPPMBvr/download.png"
   }
 ]
