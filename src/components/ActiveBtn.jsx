@@ -4,8 +4,8 @@ const ActiveBtn = ({ isActive, setIsActive, cartContainer }) => {
   return (
     <div>
       <div className="text-center">
-        <h2 className="font-bold text-3xl">Premium Digital Tools</h2>
-        <p>
+        <h2 className="font-bold text-3xl mb-2">Premium Digital Tools</h2>
+        <p className="text-xs">
           Choose from our curated collection of premium digital products
           designed to boost your productivity and creativity.
         </p>

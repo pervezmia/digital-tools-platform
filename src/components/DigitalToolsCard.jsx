@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaCheck } from 'react-icons/fa6';
 
 
 const DigitalToolsCard = ({product, cartContainer, setCartContainer}) => {
@@ -17,7 +18,8 @@ const DigitalToolsCard = ({product, cartContainer, setCartContainer}) => {
                   src={product.icon}
                   alt={product.name}
                 />
-                <p>{product.tagType}</p>
+                {/* <p></p> */}
+                <div className="badge bg-violet-300 font-semibold">{product.tagType}</div>
               </div>
               <div>
                 <h3 className="font-bold text-2xl">{product.name}</h3>
@@ -30,7 +32,12 @@ const DigitalToolsCard = ({product, cartContainer, setCartContainer}) => {
               <div>
                 <p>{product.period}</p>
               </div>
-              <button onClick={handleBuy } className="btn w-full rounded-full bg-[#9514FA] text-white font-semibold">
+              <div>
+                {
+                  product.feature.map((item,index) => <div key={index} className='flex items-center gap-2'><span className='text-green-400'><FaCheck /></span><p>{item}</p></div>)
+                }
+              </div>
+              <button onClick={handleBuy } className="btn w-full rounded-full bg-linear-to-bl from-violet-500 to-fuchsia-500 text-white font-semibold">
                 {isBuy? "Added to Cart" : "Buy Now" }
               </button>
             </div>

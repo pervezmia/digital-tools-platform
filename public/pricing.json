@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Tools Pack",
+    "description": "Basic digital tools package for beginners to get started with productivity and design.",
+    "price": 5,
+    "period": "monthly",
+    "tag": "starter",
+    "feature": [
+      "Access to 10 times free tools",
+      "Basic templates",
+      "Community support",
+      "Limited storage"
+    ]
+  },
+  {
+    "id": 2,
+    "favorite": "popular",
+    "name": "Pro Tools Suite",
+    "description": "Advanced tools for professionals with enhanced features and better performance.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "pro",
+    "feature": [
+      "Everything in starter",
+      "Premium templates",
+      "Priority support",
+      "Cloud sync"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Enterprise Tools Bundle",
+    "description": "Complete solution for teams and businesses with full access and enterprise-level features.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "enterprise",
+    "feature": [
+      "Everything in pro",
+      "Unlimited access",
+      "Team collaboration",
+      "Dedicated support"
+    ]
+  }
+]

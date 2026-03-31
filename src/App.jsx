@@ -7,6 +7,7 @@ import Stat from "./components/Stat";
 import Cart from "./components/Cart";
 import DigitalToolsCard from "./components/DigitalToolsCard";
 import ActiveBtn from "./components/ActiveBtn";
+import SubscriptionCard from "./components/SubscriptionCard";
 
 
 const dataFetch = async () => {
@@ -14,8 +15,14 @@ const dataFetch = async () => {
   return res.json();
 };
 
+const pricingFetch = async () => {
+  const res = await fetch("/pricing.json");
+  return res.json();
+}
+
 //ai promise jodi function er bire call kora hoi taile suspense er dorkar nai but function er vitor a dei taile akta error khete hobe ja suspense use korle sei error chole jabe.
 const productsPromise = dataFetch();
+const pricePromise = pricingFetch();
 
 
 
@@ -25,7 +32,7 @@ function App() {
   // const [isCartSection, setIsCartSection] = useState("carts");
 
   const [cartContainer, setCartContainer] = useState([]);
-  console.log(cartContainer.length);
+
 
   return (
     <>
@@ -37,6 +44,7 @@ function App() {
       {isActive === "products" && <DigitalTools productsPromise={productsPromise} cartContainer = {cartContainer} setCartContainer = {setCartContainer}></DigitalTools>}
 
       {isActive === "carts" && <Cart cartContainer = {cartContainer} setCartContainer = {setCartContainer}></Cart>}
+      <SubscriptionCard pricePromise={pricePromise}></SubscriptionCard>
     </>
   );
 }

@@ -11,7 +11,7 @@ const Cart = ({ cartContainer, setCartContainer }) => {
   const deleteHandle = (data) => {
     {
       const filterArray = cartContainer.filter(
-        (deleteItem) => deleteItem.id !== data.id,
+        (deleteItem) => deleteItem.id !== data.id
       );
       setCartContainer(filterArray);
     }
@@ -44,7 +44,7 @@ const Cart = ({ cartContainer, setCartContainer }) => {
                 </div>
                 <button
                   onClick={() => deleteHandle(data)}
-                  className="btn btn-warning"
+                  className="btn btn-error"
                 >
                   Remove
                 </button>
@@ -53,7 +53,7 @@ const Cart = ({ cartContainer, setCartContainer }) => {
           </div>
           <div className="flex justify-between">
             <p>Total:</p>
-            <h2 className="font-bold text-xl">${total}</h2>
+            <h2 className="font-bold text-xl">${total.toFixed(2)}</h2>
           </div>
           <div className="flex items-center justify-center">
             <button onClick={hadleProcceed} className="btn bg-violet-500 rounded-full w-full">Proceed to Checkout</button>
