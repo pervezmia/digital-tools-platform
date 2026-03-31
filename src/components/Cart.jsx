@@ -5,6 +5,7 @@ const Cart = ({ cartContainer, setCartContainer }) => {
   console.log(cartContainer.length);
   const total = cartContainer.reduce((sum, item) => sum + item.price,0)
   console.log(total);
+  
   const hadleProcceed = () => {
     setCartContainer([]);
     toast.success("Payment done successfully !")

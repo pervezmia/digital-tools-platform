@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="bg-black">
       <div className="flex w-full flex-col ">
-        <footer className="footer sm:footer-horizontal max-w-[60%] mx-auto p-10 ">
+        <footer className="footer sm:footer-horizontal lg:max-w-[60%] mx-auto p-10 ">
           <nav>
             <h1 className="text-3xl font-bold text-white">DigiTools</h1>
             <p className="text-white">
@@ -75,7 +75,7 @@ const Footer = () => {
 
         <div className="divider text-gray-500  before:bg-gray-500 after:bg-gray-500 w-[60%] mx-auto"></div>
 
-        <div className=" max-w-[80%] mx-auto flex flex-col md:justify-between md:items-center gap-10 text-white mb-10">
+        <div className="max-w-[80%] mx-auto flex md:justify-between md:items-center gap-10 text-white mb-10">
           <p className=" ">
             Copyright © {new Date().getFullYear()} - All right reserved
           </p>

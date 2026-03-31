@@ -10,6 +10,7 @@ import ActiveBtn from "./components/ActiveBtn";
 import SubscriptionCard from "./components/SubscriptionCard";
 import Steps from "./components/Steps";
 import Footer from "./components/Footer";
+import Workflow from "./components/Workflow";
 
 
 const dataFetch = async () => {
@@ -48,6 +49,7 @@ function App() {
       {isActive === "carts" && <Cart cartContainer = {cartContainer} setCartContainer = {setCartContainer}></Cart>}
       <Steps></Steps>
       <SubscriptionCard pricePromise={pricePromise}></SubscriptionCard>
+      <Workflow></Workflow>
       <Footer></Footer>
     </>
   );
