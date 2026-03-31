@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaCheck } from 'react-icons/fa6';
+import { toast } from 'react-toastify';
 
 
 const DigitalToolsCard = ({product, cartContainer, setCartContainer}) => {
@@ -8,6 +9,7 @@ const DigitalToolsCard = ({product, cartContainer, setCartContainer}) => {
     const handleBuy = () => {
         setIsBuy(true)
         setCartContainer([...cartContainer, product])
+        toast("item successfully added !")
     }
     
     return (

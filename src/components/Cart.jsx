@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const Cart = ({ cartContainer, setCartContainer }) => {
   console.log(cartContainer.length);
@@ -6,6 +7,7 @@ const Cart = ({ cartContainer, setCartContainer }) => {
   console.log(total);
   const hadleProcceed = () => {
     setCartContainer([]);
+    toast.success("Payment done successfully !")
   }
 
   const deleteHandle = (data) => {
@@ -14,6 +16,7 @@ const Cart = ({ cartContainer, setCartContainer }) => {
         (deleteItem) => deleteItem.id !== data.id
       );
       setCartContainer(filterArray);
+      toast.warning("delete successfully !")
     }
   };
   return (
